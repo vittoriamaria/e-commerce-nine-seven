@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Nine Seven</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/2.png" alt="logo nine seven">
+
+    </header>
+    <main class="container">
+        <h1 class="estoque">Produtos</h1>
+        <div class="filtros">
+            <div class = "categorias-produtos">
+                <label for="categoria">Categoria
+                </label>
+                <select id="categoria" class="categoria">
+                    <option value="selecione um produto">Selecione um produto</option>
+                    <option value="aneis">Anéis</option>
+                    <option value="bracelete">Bracelete</option>
+                    <option value="brincos">Brincos</option>
+                    <option value="cintos">Cintos</option>
+                    <option value="prata 925">Prata 925</option>
+                    <option value="sale">Sale</option>
+                </select>
+            </div>
+            <div class="preco">
+                <label for="preco-maximo">Preço Máximo R$</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex.: 20.00">
+
+            </div>
+            <button class="btn-filtrar">Aplicar Filtros</button>
+        </div>
+        <ul class="produtos">
+            <li class="produto" data-categoria="aneis" data-preco="59.90">
+                <img src="./src/imagens/1 (1).jpg" alt="anel Bold">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Anel Bold</h2>
+                    <span class="categoria">Categoria: Anéis</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="aneis" data-preco="39.90">
+                <img src="./src/imagens/1 (2).jpg" alt="anel Ihoti">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Anel Ihoti</h2>
+                    <span class="categoria">Categoria: Anéis</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="aneis" data-preco="29.90">
+                <img src="./src/imagens/1 (3).jpg" alt="Anel Drika">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Anel Drika</h2>
+                    <span class="categoria">Categoria: Anéis</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="bracelete" data-preco="69.90">
+                <img src="./src/imagens/1 (4).jpg" alt="Bracelete Judite">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Bracelete Judite</h2>
+                    <span class="categoria">Categoria: Bracelete</span>
+                    <span class="preco">R$ 69.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="bracelete" data-preco="69.90">
+                <img src="./src/imagens/1 (5).jpg" alt="Bracelete Catarine">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Bracelete Catarine</h2>
+                    <span class="categoria">Categoria: Bracelete</span>
+                    <span class="preco">R$ 69.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="bracelete" data-preco="69.90">
+                <img src="./src/imagens/1 (6).jpg" alt="Bracelete Omam">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Bracelete Omam</h2>
+                    <span class="categoria">Categoria: Bracelete</span>
+                    <span class="preco">R$ 69.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="brinco" data-preco="49.90">
+                <img src="./src/imagens/1 (7).jpg" alt="Brinco Camaleon">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Brinco Camaleon</h2>
+                    <span class="categoria">Categoria: Brinco</span>
+                    <span class="preco">R$ 49.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <br>
+            <li class="produto" data-categoria="brinco" data-preco="29.90">
+                <img src="./src/imagens/1 (7).jpg" alt="Brinco Demmy">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Brinco Demmy</h2>
+                    <span class="categoria">Categoria: Brinco</span>
+                    <span class="preco">R$ 29.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="brinco" data-preco="39.90">
+                <img src="./src/imagens/1 (8).jpg" alt="Brinco Camille">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Brinco Camille</h2>
+                    <span class="categoria">Categoria: Brinco</span>
+                    <span class="preco">R$ 39.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="cinto" data-preco="59.90">
+                <img src="./src/imagens/1 (9).jpg" alt="Cinto Thars">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Thars</h2>
+                    <span class="categoria">Categoria: Cinto</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="cinto" data-preco="59.90">
+                <img src="./src/imagens/1 (10).jpg" alt="Cinto Fall">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Fall</h2>
+                    <span class="categoria">Categoria: Cinto</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+            </li>
+            <li class="produto" data-categoria="cinto" data-preco="59.90">
+                <img src="./src/imagens/1 (11).jpg" alt="Cinto Leblon">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Leblon</h2>
+                    <span class="categoria">Categoria: Cinto</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="Prata 925" data-preco="109.90">
+                <img src="./src/imagens/1 (12).jpg" alt="Colar Gota">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Colar gota</h2>
+                    <span class="categoria">Categoria: Prata 925</span>
+                    <span class="preco">R$ 109.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="Prata 925" data-preco="89.90">
+                <img src="./src/imagens/1 (13).jpg" alt="Pulseira olho grego">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Pulseira Olho Grego</h2>
+                    <span class="categoria">Categoria: Prata 925</span>
+                    <span class="preco">R$ 89.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="Prata 925" data-preco="29.90">
+                <img src="./src/imagens/1 (14).jpg" alt="Brinco ponto de luz">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Brinco ponto de luz</h2>
+                    <span class="categoria">Categoria: Prata 925</span>
+                    <span class="preco">R$ 29.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="Sale" data-preco="19.90">
+                <img src="./src/imagens/1 (15).jpg" alt="Brinco esmaltado">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Brinco esmaltado</h2>
+                    <span class="categoria">Categoria: Sale</span>
+                    <span class="preco">R$ 19.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="Sale" data-preco="29.90">
+                <img src="./src/imagens/pexels-mlkbnl-25227840.jpg" alt="Cinto Courino">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Courino</h2>
+                    <span class="categoria">Categoria: Sale</span>
+                    <span class="preco">R$ 29.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            
+            <li class="produto" data-categoria="Sale" data-preco="29.90">
+                <img src="./src/imagens/pexels-peg1997-9886212.jpg" alt="Cinto Lis">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Lis</h2>
+                    <span class="categoria">Categoria: Sale</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="produto" data-categoria="Sale" data-preco="29.90">
+                <img src="./src/imagens/pexels-nino-sanger-203570376-16918130.jpg" alt="Cinto Lis">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Lis</h2>
+                    <span class="categoria">Categoria: Sale</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="produto" data-categoria="Sale" data-preco="29.90">
+                <img src="./src/imagens/pexels-mlkbnl-25227840.jpg" alt="Cinto Lis">
+                <div class="informacoes">
+                    <h2 class="nome-produto">Cinto Lis</h2>
+                    <span class="categoria">Categoria: Sale</span>
+                    <span class="preco">R$ 59.90</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+    <footer class="rodape">@2025 - TODOS OS DIREITOS RESERVADOS
+
+    </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
